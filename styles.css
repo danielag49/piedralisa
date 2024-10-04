@@ -35,7 +35,7 @@ body {
 
 /* Elemento del menú */
 .menu-item {
-    background-color: #fff; /* Fondo blanco */
+    background-color: #fffefe; /* Fondo blanco */
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más suave */

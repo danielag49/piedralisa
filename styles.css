@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e9b0b0; /* Color de fondo */
+    margin: 0;
+}
+
+/* Encabezado */
+.header {
+    background-color: #e06666; /* Rojo */
+    color: white;
+    padding: 20px;
+}
+
+/* Estilo de los encabezados en la sección header */
+.header h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2em; /* Tamaño de fuente media */
+    margin: 5px 0 15px;
+    color: #f5f5f5;
+}
+
+/* Sección de menú */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptación automática */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+}
+
+/* Elemento del menú */
+.menu-item {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    transition: transform 0.3s; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto hover en elementos del menú */
+.menu-item:hover {
+    transform: translateY(-5px); /* Levanta el elemento al pasar el mouse */
+}
+
+/* Estilo de imágenes dentro del menú */
+.menu-item img {
+    width: 100px; /* Ancho fijo */
+    height: 100px; /* Alto fijo */
+    border-radius: 10px; /* Bordes redondeados para imágenes */
+}
+
+/* Estilo de encabezados en los elementos del menú */
+.menu-item h2 {
+    color: #e06666; /* Color de encabezado */
+    font-size: 1.5em; /* Tamaño de fuente del encabezado */
+    margin: 15px 0 10px; /* Márgenes */
+}
+
+/* Contenido extra en elementos del menú */
+.extra-content {
+    display: none; /* Oculto por defecto */
+    text-align: left; /* Alineación a la izquierda */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilo para listas */
+ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    text-align: left; /* Alineación a la izquierda */
+    color: aqua;
+}
+
+/* Estilo de los elementos de lista */
+li {
+    margin: 5px 0; /* Espacio entre elementos de lista */
+    color: #f35353;
+}
+
+p strong{
+    color: rgb(245, 179, 104);
+}
+
+/* Pie de página */
+.footer {
+    background-color: #e73e3e; /* Rojo */
+    color: white; /* Color de texto */
+    padding: 10px; /* Espacio interno */
+}
+
+/* Estilo de tablas */
+table {
+    margin: 20px auto; /* Centrar la tabla */
+    border-collapse: collapse; /* Colapsar bordes */
+    width: 100%; /* Ancho completo */
+    color: rgb(230, 54, 23);
+}
+
+/* ------------------- */
+/*    RESPONSIVIDAD    */
+/* ------------------- */
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        padding: 10px; /* Menor padding */
+    }
+
+    .menu-item {
+        padding: 15px; /* Menor padding en los elementos del menú */
+    }
+
+    .header h1 {
+        font-size: 2em; /* Tamaño de fuente más pequeño */
+    }
+
+    .header p {
+        font-size: 1em; /* Tamaño de fuente más pequeño */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .menu-item {
+        width: 90%; /* Aumentar el ancho de los elementos del menú */
+    }
+
+    .menu-item img {
+        width: 80px; /* Ajuste de tamaño de imagen */
+        height: 80px; /* Ajuste de tamaño de imagen */
+    }
+
+    .header h1 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño */
+    }
+
+    .header p {
+        font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    }
+}
